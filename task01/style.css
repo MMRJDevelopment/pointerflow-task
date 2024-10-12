@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  display: table;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./image/bbannerimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #1a1a1a; 
+}
+
+/* navigation css start  */
+.header  #myLinks {
+  display: none;
+}
+.header  a.menu-button {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header  {
+  position: relative;
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.min-menu {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header  #myLinks {
+  display: none;
+}
+.header  a {
+  color: rgb(218, 218, 218);
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 35%;
+  font-size: 90px;
+  text-align: start;
+  display: block;
+  border-bottom: 2px solid #d4d4d4;
+  width: 100%;
+}
+.header  a.menu-button {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header  a:hover {
+  color: rgb(255, 255, 255);
+}
+.nav-a {
+  background-color: #1a1a1a;
+  height: 100vh;
+}
+.nav-all {
+  text-align: center;
+  padding-top: 10%;
+}
+.active {
+  width: 128px;
+}
+.menu-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  gap: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.menu-button:hover {
+  transform: scale(1.05);
+  background-color: #fffeff;
+  color: #6200ea;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.menu-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #6200ea;
+}
+
+/* navigation css end */
+
+/* responsive design */
+@media (max-width: 768px) {
+  .menu-head {
+    flex-direction: column;
+  }
+  .item {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1378px) {
+  .header  a {
+    margin-left: 10%;
+  }
+}
